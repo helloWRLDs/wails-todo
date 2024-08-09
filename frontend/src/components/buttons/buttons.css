@@ -1,0 +1,75 @@
+.delete-btn {
+    min-height: 20px;
+    background-color: red;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center center;
+    align-items: center;
+}
+.delete-btn:hover {
+    cursor: pointer;
+    background-color: rgb(248, 73, 73);
+}
+.delete-btn:active {
+    background-color: rgb(187, 1, 1);
+}
+
+.undone-btn {
+    min-height: 20px;
+    background-color: #c78100;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center center;
+    align-items: center;
+}
+.undone-btn:hover {
+    cursor: pointer;
+    background-color: #f1b33e;
+}
+.undone-btn:active {
+    background-color: #925f00;
+}
+
+
+.done-btn {
+    min-height: 20px;
+    background-color: rgb(0, 175, 0);
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center center;
+    align-items: center;
+}
+.done-btn:hover {
+    cursor: pointer;
+    background-color: rgb(5, 209, 5);
+}
+.done-btn:active {
+    background-color: rgb(2, 141, 2);
+}
+
+.add-btn {
+    width: auto;
+    border-radius: 10%;
+    max-height: 30px;
+    border: none;
+    outline: none;
+    transition: all .3s;
+    background-color: #008000;
+    color: white;
+}
+.add-btn:hover {
+    cursor: pointer;
+    background-color: #039e03;
+}
+.add-btn:active {
+    background-color: #007500;
+}
