@@ -12,3 +12,4 @@ Todo Desktop app using Wails.io
 ## Screenshots
 ![pic1](./docs/empty_list.jpg)
 ![pic2](./docs/filled_list.jpg)
+![pic3](./docs/validation_sample.jpg)
