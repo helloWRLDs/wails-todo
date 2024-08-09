@@ -69,7 +69,7 @@
     align-content: center;
     justify-content: center;
     margin-left: 20px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .add-todo-form>h2 {
@@ -78,4 +78,9 @@
 
 .self-center {
     align-self: center;
+}
+.err-span {
+    margin-bottom: 50px;
+    color: red;
+    font-size: 15px;
 }

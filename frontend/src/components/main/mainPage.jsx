@@ -7,6 +7,7 @@ import { AddButton, DeleteButton, DoneButton, UndoneButton } from '../buttons/bu
 const MainPage = () => {
     const [inputBody, setInputBody] = useState('')
     const [inputPrior, setInputPrior] = useState(4)
+    const [error, setError] = useState('')
 
 
     const [todos, setTodos] = useState([])
@@ -38,6 +39,12 @@ const MainPage = () => {
 
     const addTodo = (e) => {
         e.preventDefault()
+        if (inputBody.trim().length === 0) {
+            setError("Todo body cannot be empty")
+            return
+        } else {
+            setError('')
+        }
         InsertTodo({Body: inputBody, Priority: inputPrior ?? 4})
             .then(resp => {loadTodos()})
             .catch(e => console.error(e)) 
@@ -60,6 +67,7 @@ const MainPage = () => {
                 </select>
                 <AddButton className="self-center" onClick={addTodo} />
             </form>
+            <span className='err-span' style={{display: 'block'}}>{error}</span>
 
            {todos.length > 0 ? (
                 <>
